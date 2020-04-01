@@ -1,7 +1,7 @@
 FROM bitnami/java
 
+ENV TABULA_VERSION 1.2.1
 
-ENV TABULA_VERSION 1.1.1
 
 RUN wget -q https://github.com/tabulapdf/tabula/releases/download/v$TABULA_VERSION/tabula-jar-$TABULA_VERSION.zip && \
     unzip tabula-jar-$TABULA_VERSION.zip && \
