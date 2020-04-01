@@ -1,4 +1,5 @@
-FROM openjdk
+FROM bitnami/java
+
 
 ENV TABULA_VERSION 1.1.1
 
