@@ -9,4 +9,4 @@ RUN wget -q https://github.com/tabulapdf/tabula/releases/download/v$TABULA_VERSI
 
 EXPOSE 8080
 
-CMD ["java", "-Dfile.encoding=utf-8", "-Xms256M", "-Xmx1024M", "-jar", "tabula/tabula.jar"]
+CMD ["java", "-Dfile.encoding=utf-8", "-Xms256M", "-Xmx1024M", "-Dtabula.disable_version_check=1", "-Dtabula.disable_notifications=1", "-jar", "tabula/tabula.jar"]
